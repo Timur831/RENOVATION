@@ -32,12 +32,34 @@
         line-height: 24px
         margin-left: 40px
         font-family: 'Fira Sans', sans-serif  
+
 @media (max-width: 1200px)
     .head
-        &__img-room
-            width: 450px
+        &-block
+            display: flex
+            flex-direction: column
+            padding-left: 150px
+
 @media (max-width: 992px)
     .head
         &-block
             display: flex
             flex-direction: column
+            padding-left: 100px
+@media (max-width: 768px)
+    .head
+        &-block
+            display: flex
+            flex-direction: column
+            padding-left: 50px
+@media (max-width: 576px)
+    .head
+        &-block
+            display: flex
+            flex-direction: column
+            padding-left: 50px
+        &__first-title
+            font-size: 35px
+        &__second-title
+            font-size: 17px
+            margin-top: 20px
