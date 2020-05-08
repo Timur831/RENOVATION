@@ -1,0 +1,61 @@
+.hero
+    background-color: $secondary
+    padding: 50px 0
+    &-block
+        display: flex
+    &-text
+        flex-basis: 50%
+        padding-right: 120px
+        &__title
+            font-size: 41px
+            font-weight: 800
+            line-height: 55px
+            margin-bottom: 40px
+            margin-top: 20px
+            font-family: 'Fira Sans', sans-serif
+            color: $text-color 
+        &__subtitle
+            margin-bottom: 50px
+            font-size: 20px
+            font-weight: 500
+            font-family: 'Fira Sans', sans-serif    
+            color: $text-color  
+            display: inline-block
+    &-list
+        margin: 0
+        padding: 0
+        &__item
+            display: flex
+            align-items: center
+            margin-bottom: 30px
+        &__image
+            flex-basis: 40px
+            margin-right: 30px
+        &__text
+            max-width: 300px
+@media (max-width: 1200px)
+    .hero
+        &-block
+            flex-direction: column
+        &-list
+            margin-bottom: 44px
+        &-text 
+            padding-right: 10px
+@media (max-width: 768px)
+    .hero
+        &-text
+            &__title
+                font-size: 24px
+                line-height: 1.4
+                margin-bottom: 15px
+            &__subtitle
+                font-size: 16px
+        &-list
+            &__text 
+                font-size: 12px
+            
+
+        
+
+        
+
